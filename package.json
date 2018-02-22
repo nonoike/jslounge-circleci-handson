@@ -4,6 +4,10 @@
   "main": "index.js",
   "author": "nonoike <ij4nu8d4fw@gmail.com>",
   "license": "MIT",
+  "scripts":{
+    "test": "yarnt lint",
+    "lint": "eslint ./src/index.js"
+  },
   "devDependencies": {
     "eslint": "^4.18.1",
     "eslint-config-standard": "^11.0.0",
