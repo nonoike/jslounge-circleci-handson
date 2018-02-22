@@ -4,8 +4,9 @@
   "main": "index.js",
   "author": "nonoike <ij4nu8d4fw@gmail.com>",
   "license": "MIT",
-  "scripts":{
-    "test": "yarn lint",
+  "scripts": {
+    "test": "yarn lint; yarn ava",
+    "ava": "ava ./src/ -v",
     "lint": "eslint ./src/index.js"
   },
   "devDependencies": {
@@ -15,5 +16,8 @@
     "eslint-plugin-node": "^6.0.0",
     "eslint-plugin-promise": "^3.6.0",
     "eslint-plugin-standard": "^3.0.1"
+  },
+  "dependencies": {
+    "ava": "^0.25.0"
   }
 }

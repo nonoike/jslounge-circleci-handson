@@ -6,10 +6,18 @@ jobs:
     steps:
       - checkout
       - run: yarn
-      - run: yarn test
+      - run: yarn ava
+  lint:
+    docker:
+      - image: circleci/node
+    steps:
+      - checkout
+      - run: yarn
+      - run: yarn lint
 
 workflows:
   version: 2
   test:
     jobs:
       - test
+      - lint
