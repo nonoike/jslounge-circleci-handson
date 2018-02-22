@@ -5,5 +5,5 @@ function sum (...nums) {
 }
 
 test('sum of 1, 2, 3, 4 must be 10', (t) => {
-//   t.is(sum(1, 2, 3, 4), 10)
+  t.is(sum(1, 2, 3, 4), 10)
 })
