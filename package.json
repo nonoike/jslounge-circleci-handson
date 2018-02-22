@@ -5,7 +5,7 @@
   "author": "nonoike <ij4nu8d4fw@gmail.com>",
   "license": "MIT",
   "scripts":{
-    "test": "yarnt lint",
+    "test": "yarn lint",
     "lint": "eslint ./src/index.js"
   },
   "devDependencies": {
